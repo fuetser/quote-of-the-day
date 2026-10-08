@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct QuoteOfTheDayApp: App {
@@ -13,5 +14,6 @@ struct QuoteOfTheDayApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: FavoriteQuote.self)
     }
 }
